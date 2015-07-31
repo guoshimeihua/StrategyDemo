@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只接受数字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-fl-5Rv" customClass="CustomTextField">
+                                <rect key="frame" x="30" y="170" width="540" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="le2-2l-VqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="iY9-Tj-ee4"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只接受字母" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbA-ea-DLA" customClass="CustomTextField">
+                                <rect key="frame" x="30" y="244" width="540" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yLs-1s-25Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="28B-Tv-L4c"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bR2-fl-5Rv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="150" id="7Fm-cJ-mwB"/>
+                            <constraint firstAttribute="trailing" secondItem="bR2-fl-5Rv" secondAttribute="trailing" constant="30" id="Wqf-rP-zx9"/>
+                            <constraint firstItem="bR2-fl-5Rv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="Y4H-jI-DCc"/>
+                            <constraint firstItem="EbA-ea-DLA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="akw-RM-3rq"/>
+                            <constraint firstAttribute="trailing" secondItem="EbA-ea-DLA" secondAttribute="trailing" constant="30" id="our-fT-SOh"/>
+                            <constraint firstItem="EbA-ea-DLA" firstAttribute="top" secondItem="bR2-fl-5Rv" secondAttribute="bottom" constant="30" id="uwg-DM-9Bf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alphaTF" destination="EbA-ea-DLA" id="K6r-zv-I3V"/>
+                        <outlet property="numberTF" destination="bR2-fl-5Rv" id="Cje-4C-Ptd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="692" y="557"/>
         </scene>
     </scenes>
 </document>

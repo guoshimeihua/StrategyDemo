@@ -14,6 +14,10 @@
 		32D73B721B6B43FA00121453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D73B711B6B43FA00121453 /* Images.xcassets */; };
 		32D73B751B6B43FA00121453 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D73B731B6B43FA00121453 /* LaunchScreen.xib */; };
 		32D73B811B6B43FA00121453 /* StrategyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D73B801B6B43FA00121453 /* StrategyDemoTests.m */; };
+		32D73B8C1B6B447F00121453 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D73B8B1B6B447F00121453 /* InputValidator.m */; };
+		32D73B8F1B6B471A00121453 /* NumberInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D73B8E1B6B471A00121453 /* NumberInputValidator.m */; };
+		32D73B921B6B473200121453 /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D73B911B6B473200121453 /* AlphaInputValidator.m */; };
+		32D73B951B6B4CC500121453 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D73B941B6B4CC500121453 /* CustomTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		32D73B7A1B6B43FA00121453 /* StrategyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D73B7F1B6B43FA00121453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D73B801B6B43FA00121453 /* StrategyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyDemoTests.m; sourceTree = "<group>"; };
+		32D73B8A1B6B447F00121453 /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		32D73B8B1B6B447F00121453 /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		32D73B8D1B6B471A00121453 /* NumberInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInputValidator.h; sourceTree = "<group>"; };
+		32D73B8E1B6B471A00121453 /* NumberInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberInputValidator.m; sourceTree = "<group>"; };
+		32D73B901B6B473200121453 /* AlphaInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		32D73B911B6B473200121453 /* AlphaInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
+		32D73B931B6B4CC500121453 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		32D73B941B6B4CC500121453 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,14 @@
 				32D73B691B6B43FA00121453 /* AppDelegate.m */,
 				32D73B6B1B6B43FA00121453 /* ViewController.h */,
 				32D73B6C1B6B43FA00121453 /* ViewController.m */,
+				32D73B931B6B4CC500121453 /* CustomTextField.h */,
+				32D73B941B6B4CC500121453 /* CustomTextField.m */,
+				32D73B8A1B6B447F00121453 /* InputValidator.h */,
+				32D73B8B1B6B447F00121453 /* InputValidator.m */,
+				32D73B8D1B6B471A00121453 /* NumberInputValidator.h */,
+				32D73B8E1B6B471A00121453 /* NumberInputValidator.m */,
+				32D73B901B6B473200121453 /* AlphaInputValidator.h */,
+				32D73B911B6B473200121453 /* AlphaInputValidator.m */,
 				32D73B6E1B6B43FA00121453 /* Main.storyboard */,
 				32D73B711B6B43FA00121453 /* Images.xcassets */,
 				32D73B731B6B43FA00121453 /* LaunchScreen.xib */,
@@ -220,7 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D73B6D1B6B43FA00121453 /* ViewController.m in Sources */,
+				32D73B8C1B6B447F00121453 /* InputValidator.m in Sources */,
+				32D73B921B6B473200121453 /* AlphaInputValidator.m in Sources */,
 				32D73B6A1B6B43FA00121453 /* AppDelegate.m in Sources */,
+				32D73B951B6B4CC500121453 /* CustomTextField.m in Sources */,
+				32D73B8F1B6B471A00121453 /* NumberInputValidator.m in Sources */,
 				32D73B671B6B43FA00121453 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

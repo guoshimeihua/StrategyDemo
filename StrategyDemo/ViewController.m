@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "CustomTextField.h"
+#import "InputValidator.h"
+#import "NumberInputValidator.h"
+#import "AlphaInputValidator.h"
+@interface ViewController () <UITextFieldDelegate>
 
-@interface ViewController ()
+@property (weak, nonatomic) IBOutlet CustomTextField *numberTF;
+@property (weak, nonatomic) IBOutlet CustomTextField *alphaTF;
+
 
 @end
 
@@ -16,12 +23,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    InputValidator *numberValidator = [[NumberInputValidator alloc] init];
+    InputValidator *alphaValidator = [[AlphaInputValidator alloc] init];
+    
+    _numberTF.inputValidator = numberValidator;
+    _alphaTF.inputValidator = alphaValidator;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if ([textField isKindOfClass:[CustomTextField class]]) {
+        [(CustomTextField *)textField validate];
+    }
 }
 
 @end
