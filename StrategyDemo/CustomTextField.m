@@ -11,6 +11,9 @@
 @implementation CustomTextField
 
 - (BOOL)validate {
+    // 这得增加一个方法的
+    [_inputValidator configValidateInfo];
+    
     NSError *error = nil;
     BOOL validationResult = [_inputValidator validateInput:self error:&error];
     

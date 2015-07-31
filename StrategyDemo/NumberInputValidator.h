@@ -13,6 +13,8 @@
 /**
  *  这里重新声明了这个方法，以强调这个子类实现或重载了什么，这不是必须的，但是是个好习惯。
  */
-- (BOOL)validateInput:(UITextField *)input error:(NSError *__autoreleasing *)error;
+//- (BOOL)validateInput:(UITextField *)input error:(NSError *__autoreleasing *)error;
+
+- (void)configValidateInfo;
 
 @end
