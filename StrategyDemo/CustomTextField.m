@@ -11,7 +11,7 @@
 @implementation CustomTextField
 
 - (BOOL)validate {
-    // 这得增加一个方法的
+    // 调用该方法，对验证信息进行配置。
     [_inputValidator configValidateInfo];
     
     NSError *error = nil;
@@ -25,5 +25,6 @@
     
     return validationResult;
 }
+
 
 @end

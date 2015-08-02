@@ -10,8 +10,6 @@
 
 @interface AlphaInputValidator : InputValidator
 
-//- (BOOL)validateInput:(UITextField *)input error:(NSError *__autoreleasing *)error;
-
 - (void)configValidateInfo;
 
 @end

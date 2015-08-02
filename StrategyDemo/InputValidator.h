@@ -27,12 +27,12 @@ static NSString *const InputValidationErrorDomain = @"InputValidationErrorDomain
 - (BOOL)validateInput:(UITextField *)input error:(NSError *__autoreleasing *)error;
 
 /**
- *  配置与验证相关的信息，这个要求子类必须重载，不进行重载的话，就抛出异常。
+ *  配置与验证相关的信息，这个要求子类必须重写，不进行重写的话，就抛出异常。
  */
 - (void)configValidateInfo;
 
 /**
- *  配置一些相关的信息，这些由子类去重载，可以提供更多的灵活方式。留给将来使用。
+ *  预留接口，留给将来扩展使用。
  */
 - (void)configExtraInfo;
 

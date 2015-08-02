@@ -16,10 +16,11 @@
 @property (weak, nonatomic) IBOutlet CustomTextField *numberTF;
 @property (weak, nonatomic) IBOutlet CustomTextField *alphaTF;
 
-
 @end
 
 @implementation ViewController
+
+#pragma mark - life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
